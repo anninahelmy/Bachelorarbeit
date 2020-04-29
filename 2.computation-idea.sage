@@ -7,8 +7,10 @@ all = (n*l) #the amount of variables given
 
 for i in range(l,all+l,l):
         for h in range(l):
-            for j in range(l,all):
-                pr = prod(a[k] for k in range(i-l, i-l+h))
-                eq = a[j] == a[j-l]+ pr
+            for m in range(n):
+                for j in range(l,all):
+                    pr = prod(a[k] for k in range(i-l, i-l+h))
+                    eq = a[j] == a[j-l]+ pr*v[m]
                     
-                print(eq)
+                    print(eq)
+
